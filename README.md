@@ -32,6 +32,9 @@ The  Design Specifications of the designed LDO Regulator Circuit can be found [h
 |VDD|Supply Voltage|1.85|2.0|3.6|V|T=-40C to 125C|
 |ISSPD|PMOS Driver Supply Current||90||uA|
 |ISSOP|5T-OTA Amplifier Supply Current||10||uA|
+|Line Regulation|(ΔVout/ΔVin)*100%||||90||||%|
+|Load Regulation|[(ΔVout/ΔVin)*100%]/ΔVin||||90||||%|
+|PSRR|20*log(VinRipple/VoutRipple)||||90|
 
 ## Pre-Layout Performance Characteristics
 

@@ -134,21 +134,31 @@ https://www.youtube.com/watch?v=VCuyO7Chvc8&t=662s
 ## Running the Simulation
 Clone the github repo:
 ```
-$ ngspice
+git clone https://github.com/Nirvan007/1.8V_LDO_VREG.git
 ```
-To simulate a netlist, type:
+To open the file:
 ```
-ngspice 1 ->  source <filename>.cir
+cd 1.8V_LDO_VREG/
 ```
-
-You can exit from the Ngspice Shell by typing:
+To list the contents of the file:
 ```
-ngspice 1 ->  exit
+ls
 ```
- <p align="center"> or </p>
- 
+To open the simulation folder:
 ```
-ngspice 1 ->  quit
+cd Simluation/
+```
+After opening the folder, open another terminal using Xterm:
+```
+xterm &
+```
+In the Xterm terminal put the following command:
+```
+cp /usr/local/share/pdk/sky130B/libs.tech/xschem/xschemrc
+```
+After that command, start xschem by:
+```
+xschem &
 ```
 
 There are several waveforms that need to be obtained to observe the performance of the Bandgap reference circuit.

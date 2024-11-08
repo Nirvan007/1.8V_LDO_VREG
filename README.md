@@ -131,7 +131,8 @@ Please refer the following video to easily download and install Xschem & Ngspice
 https://www.youtube.com/watch?v=VCuyO7Chvc8&t=662s
 ```
 
-## Running the Simulation
+## Running the Software
+### To clone the Repository and download the schematic files for Simulation, enter the following commands in your terminal.
 Clone the github repo:
 ```
 git clone https://github.com/Nirvan007/1.8V_LDO_VREG.git
@@ -163,94 +164,111 @@ xschem &
 
 There are several waveforms that need to be obtained to observe the performance of the Bandgap reference circuit.
 
-### Pre-Layout Simulation
+## Running the Simulations
+### To run the simulations
 
-To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+Go to File, Open and then select the downloaded github repository directory.
 
-```
-$  sudo apt install -y git
-$  git clone https://github.com/sherylcorina/avsdbgp_3v3
-$  cd avsdbgp_3v3/Simulation/Ngspice_Simulation/Final_Simulation/PreLayout
-```
-
-
-
-
-### To obtain the Vout v/s Vin [1.85V - 3.6V] @ No Load plot
-
-
-Run the netlist file using the following command.
-```
-$  ngspice pre_temp.cir
-```
  <p align="center">
-  <img width="1000" height="800" src="/Images/PS/pre_ps_temp.png">
+  <img width="1000" height="800" src="Images/openFile.png">
 </p>
 
+### To obtain the DC Operating points (Voltages and Currents at all nodes)
+Open the schematic titled as the following.
+```
+opPointAtNominalCond.sch
+```
+
+Change the simulator config by going into Simulation, then Configure simulators and tools and then select the Ngspice batch, then accept and save:
+<p align="center">
+  <img width="1000" height="800" src="Images/changeSimConfig.jpg">
+</p>
+
+Then click Netlist and then Simulate
+ <p align="center">
+  <img width="1000" height="800" src="Images/netlistSimulateWaves.jpg">
+</p>
+
+<p align="center">
+  <img width="1000" height="800" src="Images/viewedNetlistAfterRunningSim.jpg">
+</p>
+
+Then go to the Waves option and click OpAnnotate, which will give the results:
+<p align="center">
+  <img width="1000" height="800" src="Images/annotateOpPointBySelectingFile.jpg">
+</p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 10uA & CL = 25pF
+Open the schematic titled as the following.
+```
+dcSweepSim.sch
+```
 
-Run the netlist file using the following command.
-```
-$  ngspice pre_supply.cir
-```
+Change the simulator config AGAIN by going into Simulation, then Configure simulators and tools and then select the Ngspice batch, then accept and save:
+<p align="center">
+  <img width="1000" height="800" src="Images/changeSimConfigToDefault.jpg">
+</p>
+
+Then click Netlist and then Simulate
  <p align="center">
-  <img width="1000" height="800" src="/Images/PS/pre_ps_supply.png">
+  <img width="1000" height="800" src="Images/netlistSimulateWaves.jpg">
+</p>
+
+<p align="center">
+  <img width="1000" height="800" src="Images/viewedNetlistAfterRunningSim.jpg">
+</p>
+
+Then plot the vin and vout curves by typing the following command in the ngspice terminal
+```
+plot vin
+```
+```
+plot vout
+```
+```
+plot vout vin
+```
+<p align="center">
+  <img width="1000" height="800" src="Images/plottingGraphUsingNgTerminal.jpg">
 </p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 10uA & CL = 20pF
 
-Run the netlist file using the following command.
+Open the schematic titled as the following.
 ```
-$  ngspice pre_tc.cir
+dcSweepSimMinLoadCap.sch
 ```
- <p align="center">
-  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
-</p>
+Repeat the same steps as before now to get the graphs.
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 10uA & CL = 30pF
 
-Run the netlist file using the following command.
+Open the schematic titled as the following.
 ```
-$  ngspice pre_tc.cir
+dcSweepSimMinLoadMaxCap.sch
 ```
- <p align="center">
-  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
-</p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 25pF
 
-Run the netlist file using the following command.
+Open the schematic titled as the following.
 ```
-$  ngspice pre_tc.cir
+dcSweepSimMaxLoad.sch
 ```
- <p align="center">
-  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
-</p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 20pF
 
-Run the netlist file using the following command.
+Open the schematic titled as the following.
 ```
-$  ngspice pre_tc.cir
+dcSweepSimMaxLoadMinCap.sch
 ```
- <p align="center">
-  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
-</p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 30pF
 
-Run the netlist file using the following command.
+Open the schematic titled as the following.
 ```
-$  ngspice pre_tc.cir
+dcSweepSimMaxLoadMaxCap.sch
 ```
- <p align="center">
-  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
-</p>
 
 ***************
-
-
 
 ## Future Work
 

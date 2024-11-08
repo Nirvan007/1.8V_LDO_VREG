@@ -26,12 +26,12 @@ The  Design Specifications of the designed LDO Regulator Circuit can be found [h
 | Parameter| Description| Min | Type | Max | Unit | Condition |
 | :---:  | :-: | :-: | :-: | :---:  | :-: | :-: |
 |Technology| 130 nm CMOS Process using Skywater 130 pdk|
-|IL|Load current at Vout terminal | 10|||mA|Vin=2.0V, T=27C|
-|CL|Load capacitance at Vout terminal|||25|pF|Vin=2.0V, T=27C, IL=1mA|
+|ILoad|Load current at Vout terminal | 10|||mA|Vin=2.0V, T=27C|
+|CLoad|Load capacitance at Vout terminal|||25|pF|Vin=2.0V, T=27C, IL=1mA|
 |Vout|Output voltage|1.792 |1.8002|1.8005|V|Vin=1.85V - 3.6V, T=27C|
-|VDD|Supply Voltage|1.85|2.0|3.6|V|T=-40C to 125C|
-|ISSPD|PMOS Driver Supply Current||90||uA|
-|ISSOP|5T-OTA Amplifier Supply Current||10||uA|
+|Vin|Supply Voltage|1.85|2.0|3.6|V|T=-40C to 125C|
+|ISSpd|PMOS Driver Supply Current||90||uA|
+|ISSopamp|5T-OTA Amplifier Supply Current||10||uA|
 |Line Regulation|(ΔVout/ΔVin)*100%||0.43||%|
 |Load Regulation|[(ΔVout/ΔVin)*100%]/ΔVin||0.215||%|
 

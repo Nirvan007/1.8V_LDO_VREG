@@ -12,13 +12,13 @@ The  Design Specifications of the designed LDO Regulator Circuit can be found [h
 ## Block Diagram of the 1.8V LDO Regulator IP
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/block.png">
+  <img width="800" height="500" src="Images/blockDiagram.png">
 </p>
 
 ## Circuit Diagram of the 1.8V LDO Regulator IP
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/circuit.png">
+  <img width="800" height="500" src="Images/schematic.png">
 </p>
 
 ## 1.8V LDO Regulator Performance Parameters 
@@ -37,53 +37,54 @@ The  Design Specifications of the designed LDO Regulator Circuit can be found [h
 
 ## Pre-Layout Performance Characteristics
 
-###  Vout v/s Vin [1.85V - 3.6V] @ No Load plot
-
-
- <p align="center">
-  <img width="800" height="500" src="/Images/N/PRE/pre_supply.png">
-</p>
-
 ###  Vout v/s Vin [1.85V - 3.6V] @ IL = 10uA & CL = 25pF
 
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/PRE/pre_tc.png">
+  <img width="800" height="500" src="Images/vinVsVoutNominalCond.jpg">
 </p>
 
-###  Vout v/s Vin [1.85V - 3.6V] @ IL = 10uA & CL = 20pF
+<p align="center">
+  <img width="800" height="500" src="Images/voutNominal.jpg">
+</p>
+
+<p align="center">
+  <img width="800" height="500" src="Images/vinNominal.jpg">
+</p>
+
+###  Vout at Vin [1.85V - 3.6V] @ IL = 10uA & CL = 20pF
 
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/PRE/pre_tc.png">
+  <img width="800" height="500" src="Images/atMinLoadMinCap.jpg">
 </p>
 
-###  Vout v/s Vin [1.85V - 3.6V] @ IL = 10uA & CL = 30pF
+###  Vout at Vin [1.85V - 3.6V] @ IL = 10uA & CL = 30pF
 
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/PRE/pre_tc.png">
+  <img width="800" height="500" src="Images/atMinLoadMaxCap.jpg">
 </p>
 
-###  Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 25pF
+### Vout at Vin [1.85V - 3.6V] @ IL = 1mA & CL = 25pF
 
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/PRE/pre_vc.png">
+  <img width="800" height="500" src="Images/atMaxLoad.jpg">
 </p>
 
-###  Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 20pF
+### Vout at Vin [1.85V - 3.6V] @ IL = 1mA & CL = 20pF
 
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/PRE/pre_vc.png">
+  <img width="800" height="500" src="Images/atMaxLoadMinCap.jpg">
 </p>
 
-###  Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 30pF
+###  Vout at Vin [1.85V - 3.6V] @ IL = 1mA & CL = 30pF
 
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/PRE/pre_vc.png">
+  <img width="800" height="500" src="Images/atMaxLoadMaxCap.jpg">
 </p>
 
 

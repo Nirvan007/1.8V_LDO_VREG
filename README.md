@@ -174,7 +174,7 @@ Run the netlist file using the following command.
 $  ngspice pre_temp.cir
 ```
  <p align="center">
-  <img width="800" height="500" src="/Images/PS/pre_ps_temp.png">
+  <img width="1000" height="800" src="/Images/PS/pre_ps_temp.png">
 </p>
 
 
@@ -185,7 +185,7 @@ Run the netlist file using the following command.
 $  ngspice pre_supply.cir
 ```
  <p align="center">
-  <img width="800" height="500" src="/Images/PS/pre_ps_supply.png">
+  <img width="1000" height="800" src="/Images/PS/pre_ps_supply.png">
 </p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 10uA & CL = 20pF
@@ -195,7 +195,7 @@ Run the netlist file using the following command.
 $  ngspice pre_tc.cir
 ```
  <p align="center">
-  <img width="800" height="500" src="/Images/PS/pre_ps_tc.png">
+  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
 </p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 10uA & CL = 30pF
@@ -205,7 +205,7 @@ Run the netlist file using the following command.
 $  ngspice pre_tc.cir
 ```
  <p align="center">
-  <img width="800" height="500" src="/Images/PS/pre_ps_tc.png">
+  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
 </p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 25pF
@@ -215,7 +215,7 @@ Run the netlist file using the following command.
 $  ngspice pre_tc.cir
 ```
  <p align="center">
-  <img width="800" height="500" src="/Images/PS/pre_ps_tc.png">
+  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
 </p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 20pF
@@ -225,7 +225,7 @@ Run the netlist file using the following command.
 $  ngspice pre_tc.cir
 ```
  <p align="center">
-  <img width="800" height="500" src="/Images/PS/pre_ps_tc.png">
+  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
 </p>
 
 ### To obtain the Vout v/s Vin [1.85V - 3.6V] @ IL = 1mA & CL = 30pF
@@ -235,7 +235,7 @@ Run the netlist file using the following command.
 $  ngspice pre_tc.cir
 ```
  <p align="center">
-  <img width="800" height="500" src="/Images/PS/pre_ps_tc.png">
+  <img width="1000" height="800" src="/Images/PS/pre_ps_tc.png">
 </p>
 
 ***************
@@ -244,14 +244,10 @@ $  ngspice pre_tc.cir
 
 ## Future Work
 
-1. Improved matching techniques such as Common Centroid / Interdigitisation need to be implemented while laying out the current mirror.
-2. PNR for the designed circuit is yet to performed using the Open Source Tool provided by the OpenROAD project.
-3. Corner Analysis Testing of the bandgap reference circuit is yet to be performed.
-4. The load driving capability needs to be improved by addition of a buffer block such as an OTA or a common drain amplifier.
-5. To adjust the reference voltage resistors must be trimmed using fuses, hence, resistor trimming must be employed in the circuit.
-6. The design must be improved to provide a higher PSRR.
-7. In the future an OTA based bandgap reference circuit will be developed with improved performance characteristics. Also, a second order bandgap reference will be studied and developed, to improve the temperature coefficient.
-8. To solve the problem of unwanted parasitic BJTs being extracted due to the modification made in the Technology File.
+1. Improved design needs to be implemented by laying out to verify the proposed circuit.
+2. Only tt corner analysis has been performed, hence other Corner Analysis Testing of the LDO regulator circuit is yet to be performed.
+3. The load driving capability needs to be improved as the current is restricted to only about 1mA.
+4. The PMOS driver needs to be calibrated properly as the size is huge ~840um/995nm to accommodate a higher load.
 
 ## Contributors 
 
@@ -259,13 +255,9 @@ $  ngspice pre_tc.cir
 
 ## Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
-- Philipp Gühring, Software Architect, LibreSilicon Assocation
-- Saroj Rout, Associate Professor & Chief Mentor of VLSI Center of Excellence SIT, Bhubaneswar, India
-- Santunu Sarangi, Asst. Professor, SIT, Bhubaneswar, India
-- Tim Edwards, Senior Vice President of Analog and Design at efabless corporation
-- Ankur Sah, M.Tech Embedded Systems, NIT Jamshedpur
+- Rajdeep Mazumderr, Physical Design Engineer, Intel (WhyRD Youtube Channel)
+- Sumanto Kar,Assistant Project Manager, FOSSEE, IITB
 
 ## Contact Information
 
-- Sheryl Serrao, Undergraduate Student, Mumbai University sherylcorina@gmail.com
-- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+- Nirvan Tamhane, Undergraduate Student, NMIMS University nirvan.tamhane07@gmail.com

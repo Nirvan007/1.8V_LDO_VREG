@@ -93,12 +93,21 @@ Ngspice is an open-source mixed-signal circuit simulator.
 
 ### Follow the following steps if you don't use an Ubuntu system:
 #### Installing Ubuntu on Windows (WSL)
-https://youtu.be/F8ngtWC0wbg?si=QZ5bzmx7Xl0prH5d
-Download Oracle Virtual Box.
-Download the Ubuntu v22.04 .iso disk image file.
-Create a new VM using the image file.
+Steps:
+* Download Oracle Virtual Box.
+* Download the Ubuntu v22.04 .iso disk image file.
+* Create a new VM using the image file.
 
-Give sudo access to the user: https://youtu.be/ERh74y-3EW8?si=Dhhi8bF1wqugm3AO
+Please refer the following video to install ubuntu on your windows PC:
+```
+https://youtu.be/F8ngtWC0wbg?si=QZ5bzmx7Xl0prH5d
+```
+
+#### After innstalling Ubuntu on Windows follow these steps:
+Please refer the following video to give sudo access to the user: 
+```
+https://youtu.be/ERh74y-3EW8?si=Dhhi8bF1wqugm3AO
+```
 Open your terminal and type the following to install Linux packages: 
 ```
 # sudo apt update; 
@@ -106,18 +115,24 @@ Open your terminal and type the following to install Linux packages:
 ```
 Go to Devices, select the Insert CD disk file command, and follow the steps in this video.
 
+
+
 ### Follow the following steps if you use an Ubuntu system or already have it set up:
 
 #### Download Git to clone the repository:
-Download Git: https://youtu.be/bc3_FL9zWWs?si=uspbw3duaVZVIili
+Please refer the following video to download Git: 
+```
+https://youtu.be/bc3_FL9zWWs?si=uspbw3duaVZVIili
+```
 
 #### Download Xschem & Ngspice:
-Download Xschem & Ngspice: https://www.youtube.com/watch?v=VCuyO7Chvc8&t=662s
+Please refer the following video to easily download and install Xschem & Ngspice:
+```
+https://www.youtube.com/watch?v=VCuyO7Chvc8&t=662s
+```
 
 ## Running the Simulation
-
-
-To enter the Ngspice Shell, open the terminal & type:
+Clone the github repo:
 ```
 $ ngspice
 ```

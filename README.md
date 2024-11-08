@@ -3,11 +3,11 @@ This project simulates the designed LDO regulator circuit to determine its pre-l
 
 ## A Glance at the 1.8V LDO Regulator IP
 
-To learn more about LDO Regulators, their principle of generation, implementation, issues & improvements, consider reading [this](/Documentation/BGR.pdf).
+To learn more about LDO Regulators, their principle of generation, implementation, issues & improvements, consider reading [this](Documentation/LDO_REGULATOR.pdf).
 
-To gain insight into the applications and significance of LDO Regulators in VLSI, look at [this](/Documentation/Applications.pdf).
+To gain insight into the applications and significance of LDO Regulators in VLSI, look at [this](Documentation).
 
-The  Design Specifications of the designed LDO Regulator Circuit can be found [here](/Documentation/Specifications.pdf).
+The  Design Specifications of the designed LDO Regulator Circuit can be found [here](Documentation/SPECIFICATIONS_FOR_LDO_REGULATOR.pdf).
 
 ## Block Diagram of the 1.8V LDO Regulator IP
 

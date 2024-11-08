@@ -283,7 +283,7 @@ dcSweepSimMaxLoadMaxCap.sch
 
 ## Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
-- Rajdeep Mazumderr, Physical Design Engineer, Intel (WhyRD Youtube Channel)
+- Rajdeep Mazumder, Physical Design Engineer, Intel (WhyRD Youtube Channel)
 - Sumanto Kar,Assistant Project Manager, FOSSEE, IITB
 
 ## Contact Information
